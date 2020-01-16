@@ -13,9 +13,9 @@ def print_first_directors_movie_titles
   director = directors_database
   string = ""
 
-  director[0][:movies][0].each do |title, name|
-    if director[0][:movies][0][title] == "title"
-      string += "#{director[0][:movies][0][title]}\n"
+  director[0][:movies][0].each_key do |key|
+    if director[0][:movies][0][key] == "title"
+      string += "#{director[0][:movies][0][key]}\n"
     end
   end
   string
