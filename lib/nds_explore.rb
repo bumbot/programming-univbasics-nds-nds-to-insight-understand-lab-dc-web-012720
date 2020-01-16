@@ -20,4 +20,4 @@ def print_first_directors_movie_titles
   string
 end
 
-puts directors_database[0][:movies]
+puts directors_database[0][:movies][0][:title]
