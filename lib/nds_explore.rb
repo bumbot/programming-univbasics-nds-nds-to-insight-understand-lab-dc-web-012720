@@ -17,7 +17,6 @@ def print_first_directors_movie_titles
       puts "#{director[0][:movies][0][key]}\n"
     end
   end
-  string
 end
 
 puts directors_database[0][:movies][0]
