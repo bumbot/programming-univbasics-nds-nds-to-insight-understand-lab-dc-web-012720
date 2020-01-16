@@ -13,9 +13,9 @@ def print_first_directors_movie_titles
   director = directors_database
   string = ""
 
-  while row < director.length do 
+  while row < director.length do
     if director[row].includes?("Steven Spielberg")
-      
+
     end
     row += 1
   end
