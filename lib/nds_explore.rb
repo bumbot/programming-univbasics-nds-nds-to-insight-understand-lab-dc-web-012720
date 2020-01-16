@@ -10,14 +10,12 @@ end
 
 def print_first_directors_movie_titles
   director = directors_database
-  string = ""
   num = 0
 
   while num < director[0][:movies].length do
-    string += "#{director[0][:movies][num][:title]}\n"
+    puts "#{director[0][:movies][num][:title]}\n"
     num += 1
   end
-  string
 end
 
 puts directors_database[0][:movies][1][:title]
