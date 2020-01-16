@@ -16,5 +16,7 @@ def print_first_directors_movie_titles
   director[0][:movies][0].each do |title, name|
     if director[0][:movies][0][title] == "title"
       string += "#{director[0][:movies][0][title]}\n"
+    end
   end
+  string
 end
