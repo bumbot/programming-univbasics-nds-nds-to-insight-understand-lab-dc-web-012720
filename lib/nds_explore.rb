@@ -13,7 +13,7 @@ def print_first_directors_movie_titles
   director = directors_database
 
   director[0][:movies][0].each_key do |key|
-    if director[0][:movies][0][key] == :title
+    if director[0][:movies][0][key] == director[0][:movies][0][:title]
       puts "#{director[0][:movies][0][key]}\n"
     end
   end
